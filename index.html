@@ -6,37 +6,146 @@
     <title>My Perfect Party</title>
     <meta
       name="description"
-      content="My Perfect Party — free wedding, birthday, and celebration planner for Android."
+      content="My Perfect Party — free wedding, birthday, and celebration planner for Android. Guests, seating, budget, tasks, and more."
+    />
+    <link rel="icon" href="images/app-icon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="images/app-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Outfit:wght@400;500;600&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="bg" aria-hidden="true"></div>
-    <main class="shell">
-      <p class="brand">My Perfect Party</p>
-      <h1>Plan celebrations without the stress</h1>
-      <p class="lead">
-        Free Android app for weddings, birthdays, and more — guests, seating, budget,
-        tasks, and invitations. Available in 40+ languages.
-      </p>
-      <div class="actions">
+
+    <header class="hero">
+      <div class="hero-copy">
+        <img
+          class="app-icon"
+          src="images/app-icon.png"
+          width="112"
+          height="112"
+          alt="My Perfect Party app icon"
+        />
+        <p class="brand">My Perfect Party</p>
+        <h1>Plan celebrations without the stress</h1>
+        <p class="lead">
+          Free Android app for weddings, birthdays, and more — guests, seating,
+          budget, tasks, and invitations.
+        </p>
         <a
-          class="btn primary"
+          class="play-badge"
           href="https://play.google.com/store/apps/details?id=com.mojasavrsenaproslava.app"
           rel="noopener noreferrer"
-          >Get it on Google Play</a
+          aria-label="Get My Perfect Party on Google Play"
         >
-        <a class="btn ghost" href="mailto:mojasavrsenaproslava@gmail.com">Contact support</a>
+          <img src="images/google-play.png" alt="Google Play" />
+        </a>
       </div>
+      <a
+        class="hero-visual"
+        href="https://play.google.com/store/apps/details?id=com.mojasavrsenaproslava.app"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="images/promo-hero.png"
+          alt="My Perfect Party — plan, organize, and celebrate your perfect event"
+        />
+      </a>
+    </header>
+
+    <main>
+      <section class="gallery" aria-labelledby="preview-heading">
+        <div class="gallery-intro">
+          <h2 id="preview-heading">See the app</h2>
+          <p>Guests, seating, expenses, tasks — everything in one place.</p>
+        </div>
+        <div class="gallery-grid">
+          <a
+            class="shot"
+            href="https://play.google.com/store/apps/details?id=com.mojasavrsenaproslava.app"
+            rel="noopener noreferrer"
+          >
+            <img src="images/promo-events.png" alt="Organize your perfect celebration" loading="lazy" />
+          </a>
+          <a
+            class="shot"
+            href="https://play.google.com/store/apps/details?id=com.mojasavrsenaproslava.app"
+            rel="noopener noreferrer"
+          >
+            <img src="images/promo-guests.png" alt="Guest list — everyone in one place" loading="lazy" />
+          </a>
+          <a
+            class="shot"
+            href="https://play.google.com/store/apps/details?id=com.mojasavrsenaproslava.app"
+            rel="noopener noreferrer"
+          >
+            <img src="images/promo-seating.png" alt="Seating arrangement" loading="lazy" />
+          </a>
+          <a
+            class="shot"
+            href="https://play.google.com/store/apps/details?id=com.mojasavrsenaproslava.app"
+            rel="noopener noreferrer"
+          >
+            <img src="images/promo-budget.png" alt="Track expenses and manage budget" loading="lazy" />
+          </a>
+          <a
+            class="shot"
+            href="https://play.google.com/store/apps/details?id=com.mojasavrsenaproslava.app"
+            rel="noopener noreferrer"
+          >
+            <img src="images/promo-biggest-expenses.png" alt="Biggest expenses overview" loading="lazy" />
+          </a>
+          <a
+            class="shot"
+            href="https://play.google.com/store/apps/details?id=com.mojasavrsenaproslava.app"
+            rel="noopener noreferrer"
+          >
+            <img src="images/promo-tasks.png" alt="Tasks — nothing gets overlooked" loading="lazy" />
+          </a>
+          <a
+            class="shot"
+            href="https://play.google.com/store/apps/details?id=com.mojasavrsenaproslava.app"
+            rel="noopener noreferrer"
+          >
+            <img src="images/promo-organize.png" alt="Organize without chaos" loading="lazy" />
+          </a>
+          <a
+            class="shot"
+            href="https://play.google.com/store/apps/details?id=com.mojasavrsenaproslava.app"
+            rel="noopener noreferrer"
+          >
+            <img src="images/promo-complete-control.png" alt="Complete control over every detail" loading="lazy" />
+          </a>
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <p class="cta-title">Available on Android</p>
+        <a
+          class="play-badge play-badge-lg"
+          href="https://play.google.com/store/apps/details?id=com.mojasavrsenaproslava.app"
+          rel="noopener noreferrer"
+          aria-label="Get My Perfect Party on Google Play"
+        >
+          <img src="images/google-play.png" alt="Google Play" />
+        </a>
+        <a class="btn ghost" href="mailto:mojasavrsenaproslava@gmail.com">Contact support</a>
+      </section>
+    </main>
+
+    <footer>
       <nav class="links" aria-label="Legal">
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Use</a>
         <a href="app-ads.txt">app-ads.txt</a>
       </nav>
-    </main>
-    <footer>
       <p>© <span id="year"></span> My Perfect Party · Moja savršena proslava</p>
     </footer>
+
     <script>
       document.getElementById('year').textContent = String(new Date().getFullYear());
     </script>
